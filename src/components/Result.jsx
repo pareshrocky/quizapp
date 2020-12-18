@@ -2,6 +2,9 @@ import React from "react";
 
 function Result(props){
   var resultDisplayed;
+if(props.endTime === 0){
+  resultDisplayed="You ran out of time! #Go Fu#ck yourself..."
+}else{
   if(props.score===5){
     resultDisplayed= "Excellent, You scored " + props.score + "/5 correct answers!!" ;
   }else if(props.score<5 && props.score>=3){
@@ -11,6 +14,10 @@ function Result(props){
   }else{
     resultDisplayed= "Awww!, You scored " + props.score + "/5 #Work Hard";
   }
+}
+
+
+
   return(
     <div className="score-board">
        <div className="score"> {resultDisplayed} </div>
