@@ -50,7 +50,7 @@ return(
 
      }
      {
-       responses ===5 && (<Result score={score} playAgain={resetQuiz} endTime={seconds}/>)
+       responses ===5 && (<Result score={score} playAgain={resetQuiz} />)
      }
      {
        seconds===0 && (<Result score={score} playAgain={resetQuiz} endTime={seconds}/>)
