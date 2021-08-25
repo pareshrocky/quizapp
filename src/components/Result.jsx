@@ -3,7 +3,7 @@ import React from "react";
 function Result(props){
   var resultDisplayed;
 if(props.endTime === 0){
-  resultDisplayed="You ran out of time! #Go Fu#ck yourself..."
+  resultDisplayed="You ran out of time!"
 }else{
   if(props.score===5){
     resultDisplayed= "Excellent, You scored " + props.score + "/5 correct answers!!" ;
